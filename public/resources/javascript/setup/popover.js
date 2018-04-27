@@ -17,5 +17,7 @@ module.exports = function () {
     
     // Initialise Bootstrap tooltips
     //http://getbootstrap.com/javascript/#tooltips
+    //attempt to remove existing tooltip
+    $('[data-toggle="tooltip"]').tooltip('destroy')
     $('[data-toggle="tooltip"]').tooltip()
 }
